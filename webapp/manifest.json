@@ -1,0 +1,132 @@
+{
+    "version": "1.37.0",      
+    "sap.app" : {
+        "id": "esb.ei.sm",
+        "type": "application",
+        "applicationVersion": {
+            "version" : "1.0.0"
+
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "i18n" : "i18n/i18n.properties",
+        "dataSources": {
+            "productService" : {
+                "type": "OData",
+                "uri": "sap/opu/odata/sap/Z_PRODUCT_SRV",
+                "settings": {
+                    "odataVersion": "2.0"
+                }
+            }
+        }
+      },
+      "sap.ui": {
+        "deviceTypes": {
+            "desktop" : true,    
+            "phone"   : true,
+            "tablet"  : true    
+        },
+        "supportedThemes" : ["sap_belize","sap_fiori_3_dark" ]
+
+      },
+      "sap.ui5": {
+        "libary" : {
+            "css": "css/mystyle.css"
+
+        },
+        "rootView":{
+            "viewName": "esb.ei.sm.view.App",
+            "id": "idApp",
+            "type": "XML"
+
+        },
+        "routing": {
+            "config": {
+                 "viewType": "XML",
+                 "viewPath": "esb.ei.sm.view",
+                 "controlId": "appCon",
+                 "clearControlAggregation": true   
+            },
+            "routes": [ {
+                "name": "master",
+                "pattern": "",
+                "target": ["joe","biden"]
+            },
+            {
+                "name": "detail",
+                "pattern": "product/{pid}",
+                "target": ["joe","modi"]
+            },
+            {
+                "name": "Suppdetail",
+                "pattern": "supplier/{sid}",
+                "target": ["joe","supp"]
+            },
+            {
+                "name": "addProduct",
+                "pattern": "addProduct",
+                "target": ["joe","additionTarget"]
+            }
+                    
+
+        ],
+            "targets": {
+                "joe": {
+                    "viewName": "View1",
+                    "id": "idView1",
+                    "controlAggregation": "masterPages"
+                },
+                "biden" : {
+                    "viewName": "Empty",
+                    "id": "idEmpty",
+                    "controlAggregation": "detailPages"
+
+                },
+                "modi": {
+                    "viewName": "View2",
+                    "id": "idView2",
+                    "controlAggregation": "detailPages"
+                },
+                "supp": {
+                    "viewName": "View3",
+                    "id": "idView3",
+                    "controlAggregation": "detailPages"
+                },
+                "additionTarget":{
+                    "viewName": "Add",
+                    "id": "idAdd",
+                    "controlAggregation": "detailPages"
+                } 
+            }
+        },  
+
+        "dependencies": {
+            "minUI5Version" : "1.90.0",
+            "libs" : {
+                "sap.m" :{
+                    "minVersion" : "1.90.0"
+                },
+                "sap.ui.layout" :{
+                    "minVersion" : "1.90.0"
+                }
+
+            } 
+        },
+        "models" : {
+             "" : { 
+                "type" : "sap.ui.model.odata.v2.ODataModel",
+                "dataSource": "productService"
+             },   
+            "local":{
+                "type":"sap.ui.model.json.JSONModel",
+                "uri": "modeldata/fruits.json"
+            },
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {"bundleUrl": "i18n/i18n.properties" } 
+            }
+        }
+
+
+      }
+}

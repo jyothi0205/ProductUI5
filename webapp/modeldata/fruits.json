@@ -1,0 +1,263 @@
+{
+	"fruits": [{
+			"name": "Apple",
+			"colour": "Red",
+			"type": "neutral",
+			"image": "https://www.everythingbranded.co.uk/cdn-cgi/image/quality=70/slir/w500-h500-c1x1/assets/media/2022/01/11/204900.jpg",
+			"price": 100,
+			"units": "EURO",
+			"status": "A"
+		},
+		{
+			"name": "Orange",
+			"colour": "Yellow",
+			"type": "Citrus",
+			"image": "https://www.falcononline.co.uk/pub/media/catalog/product/cache/3efd98ac530f6755d43f0b8685cb0c8b/6/3/6342_1.jpeg",
+			"price": 50,
+			"units": "AED",
+			"status": "D"
+		},
+		{
+			"name": "Plums",
+			"colour": "grey",
+			"type": "alkaline",
+			"image": "https://cdn.ecommercedns.uk/files/0/225760/2/17314322/image.jpg?1657882075195",
+			"price": 200,
+			"units": "GBP",
+			"status": "O"
+		},
+        {
+			"name": "Mangoes",
+			"colour": "Yellow",
+			"type": "acidic",
+			"image": "https://img.freepik.com/premium-photo/ripe-mango-with-green-leaf-isolated-white_252965-183.jpg?w=2000",
+			"price": 300,
+			"units": "USD",
+			"status": "D"
+		},
+        {
+			"name": "Water Melon",
+			"colour": "Green",
+			"type": "Alkaline",
+			"image": "https://images.pexels.com/photos/1313267/pexels-photo-1313267.jpeg",
+			"price": 50,
+			"units": "INR",
+			"status": "O"
+		},
+        {
+			"name": "Cherries",
+			"colour": "Red",
+			"type": "Acidic",
+			"image": "https://images.pexels.com/photos/35629/bing-cherries-ripe-red-fruit.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+			"price": 100,
+			"units": "USD",
+			"status": "D"
+		},
+        {
+			"name": "Pine Apple",
+			"colour": "Yellow",
+			"type": "Alkaline",
+			"image": "https://images.pexels.com/photos/137119/pexels-photo-137119.jpeg",
+			"price": 75,
+			"units": "GBP",
+			"status": "A"
+		},
+        {
+			"name": "Pomegranate",
+			"colour": "Red",
+			"type": "neutral",
+			"image": "https://images.pexels.com/photos/1435741/pexels-photo-1435741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+			"price": 100,
+			"units": "EURO",
+			"status": "O"
+		}
+
+	],
+	"suppliers": [{
+			"name": "Enza",
+			"contact person": "Ramesh Maramreddy",
+			"city": "Auckland",
+			"sinceWhen": "1987",
+			"fruits": [{
+					"name": "Apple",
+					"colour": "Red",
+					"type": "neutral",
+					"image": "",
+					"price": 100,
+					"units": "kgs",
+					"status": "A"
+				},
+				{
+					"name": "Orange",
+					"colour": "Yellow",
+					"type": "Citrus",
+					"image": "",
+					"price": 50,
+					"units": "each",
+					"status": "D"
+				},
+				{
+					"name": "Plum",
+					"colour": "grey",
+					"type": "alkaline",
+					"image": "",
+					"price": 200,
+					"units": "punet",
+					"status": "O"
+				},
+				{
+					"name": "Strawberry",
+					"colour": "red",
+					"type": "alkaline",
+					"image": "",
+					"price": 50,
+					"units": "kgs",
+					"status": "A"
+				}
+			],
+			"state": "Hertfordshire",
+			"Phone no": "0974567775343"
+
+		},
+		{
+			"name": "Merlin",
+			"contact person": "Jyoti Polu",
+			"city": "Venice",
+			"sinceWhen": "1956",
+			"fruits": [{
+					"name": "Apple",
+					"colour": "Red",
+					"type": "neutral",
+					"image": "",
+					"price": 100,
+					"units": "kgs",
+					"status": "A"
+				},
+				{
+					"name": "Orange",
+					"colour": "Yellow",
+					"type": "Citrus",
+					"image": "",
+					"price": 50,
+					"units": "each",
+					"status": "D"
+				},
+				{
+					"name": "Plum",
+					"colour": "grey",
+					"type": "alkaline",
+					"image": "",
+					"price": 200,
+					"units": "punet",
+					"status": "O"
+				},
+				{
+					"name": "straberry",
+					"colour": "red",
+					"type": "alkaline",
+					"image": "",
+					"price": 50,
+					"units": "kgs",
+					"status": "A"
+				}
+			],
+			"state": "California",
+			"Phone no": "007864343436"
+
+		},
+		{
+			"name": "Regency",
+			"contact person": "Veda Maramreddy",
+			"city": "Birmingham",
+			"sinceWhen": "1960",
+			"fruits": [
+				{
+					"name": "Orange",
+					"colour": "Yellow",
+					"type": "Citrus",
+					"image": "",
+					"price": 50,
+					"units": "each",
+					"status": "D"
+				},
+				{
+					"name": "Plum",
+					"colour": "grey",
+					"type": "alkaline",
+					"image": "",
+					"price": 200,
+					"units": "punet",
+					"status": "O"
+				},
+				{
+					"name": "Strawberry",
+					"colour": "red",
+					"type": "alkaline",
+					"image": "",
+					"price": 50,
+					"units": "kgs",
+					"status": "A"
+				}
+			],
+			"state": "Midlands",
+			"Phone no": "0044786353"
+
+		}
+	],
+	"cities": [{
+			"name": "Auckland",
+			"state": "California",
+			"population": 450000000,
+			"famousfor": "Seaside"
+		},
+		{
+			"name": "Venice",
+			"state": "London",
+			"population": 200000000,
+			"famousfor": "Canals"
+		},
+		{
+			"name": "Watford",
+			"state": "Kent",
+			"population": 456000,
+			"famousfor": "Harry Porter"
+		},
+		{
+			"name": "London",
+			"state": "SouthEast",
+			"population": 8000000,
+			"famousfor": "Museums"
+		},
+		{
+			"name": "Nicosia",
+			"state": "Ciprus",
+			"population": 9876300,
+			"famousfor": "Medical School"
+		},
+		{
+			"name": "Reading",
+			"state": "SouthWest",
+			"population": 90000,
+			"famousfor": "Indutries"
+		},
+		{
+			"name": "Ramsgate",
+			"state": "SouthEast",
+			"population": 4500,
+			"famousfor": "Beach"
+		},
+		{
+			"name": "Nagpur",
+			"state": "Madhya Pradesh",
+			"population": 600000,
+			"famousfor": "Oranges"
+		},
+		{
+			"name": "Nellore",
+			"state": "Andra Pradesh",
+			"population": 600000,
+			"famousfor": "Rice"
+		}
+	]
+
+}

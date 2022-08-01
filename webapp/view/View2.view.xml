@@ -1,0 +1,30 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="esb.ei.sm.controller.View2" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+  <Page title="{i18n>XTIT_V2}" showNavButton="true" navButtonPress="onBack">
+    <!-- <Button text="Go Back" press="onBack" /> -->
+    <ObjectHeader title="{name}" intro="{type}" number="{price}" numberUnit="{units}" icon="{image}">
+      <firstStatus>
+        <ObjectStatus text="{path: 'status', formatter: '.formatter.getStatus'}" state="{path: 'status', formatter: '.formatter.getState'}"></ObjectStatus>
+      </firstStatus>
+    </ObjectHeader>
+    <IconTabBar>
+       <items>
+        <IconTabFilter text="More Info" icon="sap-icon://information">
+          <core:Fragment fragmentName="esb.ei.sm.fragments.moreinfo" type="XML"></core:Fragment>
+         </IconTabFilter>
+        <IconTabFilter text="Supplier" icon="sap-icon://supplier">
+          <core:Fragment fragmentName="esb.ei.sm.fragments.supplier" type="XML"></core:Fragment>
+        </IconTabFilter>
+        <IconTabFilter text="Cities" icon="sap-icon://home">
+          <core:Fragment fragmentName="esb.ei.sm.fragments.cities" type="XML"></core:Fragment>
+        </IconTabFilter>
+      </items>
+    </IconTabBar>
+    <footer>
+      <Toolbar>
+        <ToolbarSpacer></ToolbarSpacer>
+        <Button type="Approve" text="Approve" press="onApprove"></Button>
+        <Button type="Reject" text="Reject" press="onReject"></Button>
+      </Toolbar>
+    </footer>
+  </Page>
+</mvc:View>

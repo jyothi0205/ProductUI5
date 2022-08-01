@@ -1,0 +1,44 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
+    <Table id="idSuppliers" items="{/SupplierSet}" selectionChange = "onsuppChange"	mode="SingleSelect" >
+      <headerToolbar>
+        <Toolbar>
+          <content>
+            <ToolbarSpacer/>
+            <Button icon="sap-icon://filter" press="onFilter" tooltip="filter supplier"> </Button>
+          </content>
+        </Toolbar>
+      </headerToolbar>
+        <columns>
+          <Column>
+            <header>
+              <Label text="Name of Supplier" />
+            </header>
+          </Column>
+          <Column>
+            <header>
+              <Label text="City" />
+            </header>
+          </Column>
+          <Column minScreenWidth="Tablet" demandPopin="true">
+            <header>
+              <Label text="Email ID" />
+            </header>
+          </Column>
+          <Column minScreenWidth="Tablet">
+            <header>
+              <Label text="Postal Code" />
+            </header>
+          </Column>
+        </columns>
+        <items>
+          <ColumnListItem>
+            <cells>
+              <Text id="idSName" text="{BP_ID}-{COMPANY_NAME} " />
+              <Input id="idCity" showValueHelp = "true" valueHelpRequest = 'onF4Help' value="{CITY}" />
+              <Text id="IdContactPerson" text="{EMAIL_ADDRESS}" />
+              <Text id="IdSinceWhen" text="{POSTAL_CODE}" />
+            </cells>
+          </ColumnListItem>
+        </items>
+      </Table>
+</core:FragmentDefinition>

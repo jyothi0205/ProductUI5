@@ -1,0 +1,6 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="esb.ei.sm.controller.Empty">
+<Page>
+<Image width = "100%" height= "100%" src="">
+</Image>
+</Page>
+</mvc:View>

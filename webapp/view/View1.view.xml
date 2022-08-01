@@ -1,0 +1,51 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="esb.ei.sm.controller.View1">
+  <Page title="{i18n>XTIT_V1}" >
+    <headerContent>
+      <Button icon = "sap-icon://action" tooltip="Share" press="onNext" />
+    </headerContent>
+    <SearchField id="idSearch" search="onSearch" liveChange="onSearch"
+                 placeholder="Search for...">
+
+          </SearchField>
+    <!-- <Button text="Go to Next" press="onNext" /> -->
+    <List id="IdList"  items="{path: '/ProductSet', sorter: {path : 'NAME'}}" mode="SingleSelectMaster"
+                                   delete="onItemDelete" selectionChange = "onselectionChange"
+                                   growing = "true"  growingThreshold="10">
+      <items>
+        <ObjectListItem title="{NAME}" intro="{CATEGORY}" number="{PRICE}" numberUnit="{CURRENCY_CODE}" icon="sap-icon://product"></ObjectListItem> 
+      <!-- <DisplayListItem id="idDisplayListItem" label="Apple" value="One of the best Antibiotics"></DisplayListItem>
+      <StandardListItem id="idStandardListItem" title="Banana" description="Rich source of Pottassium" icon="https://www.pngall.com/wp-content/uploads/2016/04/Banana-Free-Download-PNG.png"></StandardListItem>
+      <InputListItem id="idInputListItem" >
+        <content>
+          <HBox>
+          <Label class= "sapUiSmallMargin" id="idLabel" text="How many Bananas you want to Order"></Label>
+          <Input width="30%"></Input>
+        </HBox>
+        </content>
+      </InputListItem>
+      <ObjectListItem id="idObjectListItem" 	title="PineApple" intro="Increase glow of your skin" 	number="500" 	numberUnit="Kgs" icon="https://cdn.shopify.com/s/files/1/2117/0071/products/Fruit-Pineapple-Neon-Sign_3086eedb-3180-4f6c-b1a4-693d4a06f0d7_600x.jpg?" >
+      </ObjectListItem>
+       <CustomListItem >
+        <content>
+          <HBox>
+            <Label class="sapUiSmallMargin" text="Do you want CoD"></Label>
+            <Switch></Switch>
+          </HBox>
+        </content>
+      </CustomListItem>
+      <FeedListItem sender="PM Modi" text="Hello Ramesh whats up?" timestamp="Sunday 08 May" icon="data:image/jpeg;base64,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">
+
+      </FeedListItem>
+      <ActionListItem text="Order Now!">
+
+      </ActionListItem> -->
+    </items>
+    </List>
+    <footer>
+      <Toolbar>
+        <ToolbarSpacer></ToolbarSpacer>
+        <Button text="Add" icon="sap-icon://add" press="onAdd"></Button>
+      </Toolbar>
+    </footer>
+  </Page>
+</mvc:View>
