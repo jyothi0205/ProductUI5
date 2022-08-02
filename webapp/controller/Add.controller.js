@@ -75,14 +75,14 @@ sap.ui.define([
             var  oDataModel = this.getView().getModel();   
             // Prepare the path to read single product data 
             var sPath = "/ProductSet('"+ val +"')";
-            // Fire the OData get call 
+            // Fire the OData get call & // Set the data to the local model  
             oDataModel.read(sPath, {
                              success: function(data){
                                 oModel.setProperty("/prodData",data);
                              },
 
                             });            
-            // Set the data to the local model 
+            
 
            }
 
