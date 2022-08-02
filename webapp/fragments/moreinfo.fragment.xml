@@ -1,5 +1,5 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
-    <f:SimpleForm id="iDSimpleForm" title="Fruit Infomation">
+    <f:SimpleForm id="iDSimpleForm" title="Product and Supplier Infomation">
         <f:content>
           <Label text="{i18n>name}" />
           <Text id="idName" text="{PRODUCT_ID} - {NAME}" />
