@@ -27,7 +27,7 @@
 					<f:formElements>
 						<f:FormElement label="Product ID">
 							<f:fields>
-								<Input value="{prod>/prodData/PRODUCT_ID}" id="name" submit= "onEnter" />
+								<Input value="{prod>/prodData/PRODUCT_ID}"  enabled="{prod>/enable}" id="name" submit= "onEnter" />
 							</f:fields>
 						</f:FormElement>
 						<f:FormElement label="Product Name">
@@ -52,7 +52,7 @@
 						</f:FormElement>
 						<f:FormElement label="Category">
 							<f:fields>
-								<Select id="country" selectedKey="{prod>/prodData/CATEGORY}">
+								<Select id="category" selectedKey="{prod>/prodData/CATEGORY}">
 									<items>
 										<core:Item text="Notebooks" key="Notebooks"/>
 										<core:Item text="Mice" key="Mice"/>
@@ -60,17 +60,20 @@
 									</items>
 								</Select>
 							</f:fields>
+							<Button text="Load Most Expensive Product"  icon="sap-icon://mobile" press="onLoadExp" />
 						</f:FormElement>
 					</f:formElements>
 				</f:FormContainer>
 			</f:formContainers>
 		</f:Form>
+		<Image id="idPhoto" width="60%"  height="400px" />
 	</VBox>
 	<footer>
 	<Toolbar>
 		<ToolbarSpacer>		</ToolbarSpacer>
 		    <Button text="Clear" press="onClearScreen" icon="sap-icon://warning"></Button>
-			<Button text="Save" press="onSaveProduct" icon="sap-icon://save"></Button>
+			<Button text="Save" type= "Accept" id= "idSave" press="onSaveProduct" icon="sap-icon://save"></Button>
+			<Button text="Delete" type = "Reject" id= "idDelete" press="onDelete" icon="sap-icon://delete"></Button>
 	</Toolbar>
 	</footer>
 </Page>    
